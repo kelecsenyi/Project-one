@@ -1,0 +1,357 @@
+/*
+Theme Name: Conti-Trans
+Theme URI: --
+Description: Responsive webdesign
+Version: 1.2
+Author: Kelecsényi Balázs
+Author URI: --
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+   --nav:#071330;
+   --background:#e3e8ee;
+   --hover:#0C4160;
+   --gradient1: hsl(0 0% 0% /0);
+   --gradient2: hsl(0 0% 0% /.7);
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background: var(--background);
+}
+
+nav{
+    background: var(--nav);
+}
+
+/*MENU*/
+.menu {
+    max-width: 1150px; 
+    margin: 0 auto; 
+    padding: 0 15px;
+    display: flex; 
+    flex-flow: row nowrap; 
+    align-items: center; 
+    justify-content: space-between; 
+    height: 70px;
+}
+
+.menu .logo{
+    color: white;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.menu ul{
+    list-style: none;
+}
+
+.menu ul li{
+    padding: 0 15px;
+    border-radius: 10px;
+    display: inline-block;
+    transition: all .3s;
+}
+
+.menu ul li:hover{
+    background: var(--hover);
+}
+
+.menu ul li:hover a{
+    color: white;
+    transition: all .3s;
+}
+
+.menu ul li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    padding: 10px 15px;
+}
+
+.toggle{
+    right: 30px;
+    display: none;
+    width: 40px;
+    height: 40px;
+    font-size: 2.5em;
+    cursor: pointer;
+    border-radius: 30%;
+    color: white;
+    transition: all .3s;
+}
+
+.toggle:hover{
+    background: var(--hover);
+    transition: all .3s;
+}
+
+@media (max-width: 770px){
+    .toggle{
+        display: inline-block;
+        margin-right: 5px;
+    }
+
+    .menu{
+        justify-content: space-between;   
+    }
+    .menu .links {
+        background: #343434; 
+        position: absolute; 
+        top: 70px;
+        left: 0; 
+        width: 100%;
+        opacity: 0; 
+        transform: scaleY(0); 
+        transition: transform .3s;
+        transition: opacity .5s;
+        transform-origin: top 
+    }
+
+	.menu.active .links{ 
+        transform: scaleY(1); 
+        transition: all .3s;
+        opacity: 1 
+    }
+
+    .menu .links li{
+        border-radius: 0;
+        padding: 5px 0;
+        text-align: center;
+        width: 100%;
+        border-bottom: 2px solid white;
+        cursor: pointer;
+    }
+}
+
+/*MENU END*/
+
+/*MAIN--LANDING*/
+.main{
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+
+.landing{
+    min-height: 600px;
+    background: linear-gradient(var(--gradient1), var(--gradient2)),
+                url("pics/landing.jpg") no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display:flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    color:white
+}
+
+.container h1{
+    text-align: center;
+    font-weight: 400;
+    font-size: 2.5rem;
+    padding: 10px;
+    color:white
+}
+
+.container a{
+    text-decoration: none;
+    text-align: center;
+    width: auto;
+    font-size: 2rem;
+    padding: 10px;
+    border-radius: 20px;
+    color:white;
+    transition: all .6s;
+}
+
+.container a:hover{
+    background: white;
+    color: black;
+    transition: all .6s;
+}
+
+@media (max-width: 770px){
+   .container a{
+       font-size: 1.3rem;
+   }
+   .container h1{
+    font-size: 1.6rem;
+   }
+}
+
+
+/*MAIN--LANDING-END*/
+
+/*MAIN*/
+.title{
+    margin: 9px 0;
+    display:flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:white;
+}
+
+.title h2{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+@media (max-width:770px){
+    .title h2{
+        font-size: 1.7rem;
+    }
+    .wrapper p{
+        font-size: 1.1rem;
+    }
+}
+
+.title::after{
+    content: '';
+    border: 1px solid var(--nav);
+    opacity: .5;
+    width: 50vw;
+}
+
+.wrapper{
+    display:flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    max-width: 1150px;
+    margin: 10px auto;
+    padding: 0 30px;
+    font-size: 1.2rem;
+    text-align: justify;
+    line-height: 30px;
+    color: white;
+}
+
+.main .parts section{
+    margin: 10px 0;
+    box-shadow: 0 0 100px rgba(0, 0, 0, .4);
+    transition: transform .4s;
+    border-radius: 5px;
+}
+
+.main .parts section:nth-child(1){
+    background: #1EA0FB;
+}
+
+.main .parts section:nth-child(2){
+    background: #FF9636;
+}
+
+.main .parts section:nth-child(3){
+    background: #478C5C;
+}
+
+.parts{
+   max-width: 1150px;
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    margin: 0 auto; 
+}
+
+.parts #contact .wrapper{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.parts #contact .wrapper a {
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, .4);
+    background: url("pics/location.JPG") no-repeat center center;
+    display: block;
+    margin: 5px;
+    width: 50%;
+}
+
+.parts #contact ul{
+    list-style: none;
+}
+.parts #contact ul li h4{
+   margin: 5px 0;
+}
+
+.parts #contact ul li{
+    line-height: 35px;
+}
+
+@media (max-width:800px){
+    .parts #contact .wrapper{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .parts #contact ul li{
+        text-align: center;
+    }
+}
+/*MAIN-END*/
+
+/*FOOTER*/
+footer{
+    background: var(--nav);
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.6;
+    color: white;
+}
+.footer-container{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.footer-container a{
+    flex-basis: 20%;
+    text-align: center;
+    display: block;
+    margin: 10px 0 10px 0;
+    text-decoration: none;
+    color: white;
+}
+
+.footer-container a:hover{
+    color: gray
+}
+
+.footer-container a .icon{
+    font-size: 3rem;
+    display: block;
+}
+
+@media (max-width:800px){
+    .footer-container a{
+        flex-basis: 50%;
+        margin: 0 0 40px 0;
+    }
+}
+
+@media (max-width:500px){
+    .footer-container a{
+        flex-basis: 100%;
+    }
+}
+/*FOOTER-END*/
