@@ -17,8 +17,11 @@ Author URI: --
 
 :root{
    --nav:#071330;
-   --background:#e3e8ee;
-   --hover:#0C4160;
+   --background:#E3E8EE;
+   --bggrey:#575353;
+   --orange:#FE7A00;
+   --hover:white;
+   --white:white;
    --gradient1: hsl(0 0% 0% /0);
    --gradient2: hsl(0 0% 0% /.7);
 }
@@ -32,7 +35,7 @@ nav{
     background: var(--nav);
 }
 
-/*MENU*/
+/*MENU
 .menu {
     max-width: 1150px; 
     margin: 0 auto; 
@@ -50,27 +53,27 @@ nav{
     letter-spacing: 1.5px;
 }
 
-.menu ul{
+.menu .links {
     list-style: none;
 }
 
-.menu ul li{
+.menu .links  li{
     padding: 0 15px;
     border-radius: 10px;
     display: inline-block;
     transition: all .3s;
 }
 
-.menu ul li:hover{
-    background: var(--hover);
+.menu .links li:hover{
+    background: red;
 }
 
-.menu ul li:hover a{
+.menu .links li:hover a{
     color: white;
     transition: all .3s;
 }
 
-.menu ul li a{
+.menu .links li a{
     display: block;
     text-decoration: none;
     color: white;
@@ -132,7 +135,7 @@ nav{
         border-bottom: 2px solid white;
         cursor: pointer;
     }
-}
+}*/
 
 /*MENU END*/
 
