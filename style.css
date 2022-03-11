@@ -174,7 +174,6 @@ section{
     text-shadow: 0px 0px 30px #000000;
     font-weight: 500;
     font-size: 2.2rem;
-    padding: 1rem;
     margin: 4rem 1rem;
     letter-spacing: 1.5px;
 }
@@ -216,10 +215,11 @@ ion-icon{
 @media (max-width: 770px){
     .landing .text h1{
         font-size: 1.5rem;
-        margin: 2rem 1rem;
+        margin: 1.5rem 0.5rem;
     }
     .landing .text p{
         font-size: 1.3rem;
+        margin: 2rem 0.5rem;
      }
     .landing .text a{
        font-size: 1.3rem;
@@ -288,8 +288,8 @@ section:nth-child(4){
 }
 
 .icon .container .col img{
-    width: 210px;
-    height: 250px; 
+    width: 200px;
+    height: 240px; 
 }
 
 .icon .container .col p{
@@ -308,8 +308,8 @@ section:nth-child(4){
 
 @media (max-width:550px){
     .icon .container .col img{
-        width: 180px;
-        height: 220px; 
+        width: 160px;
+        height: 200px; 
     }
     .icon .container .col{
         flex-basis: 100%;
