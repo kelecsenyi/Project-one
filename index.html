@@ -1,172 +1,230 @@
 <!doctype html>
 <html lang="hu-HU">
   <head>
-    <title>Üdvözöljük a Conti-Trans weboldalán</title>
+    <title>CONTI TRANS – Belföldi Tengeri Konténer-szállítmányozás</title>
     <meta charset="utf-8">
-    <!-- SEO tags-->
-    <meta name="description" content="Cégünk, több mint 20 éve nyújt megbízható és minőségi szállítmányozási szolgáltatást, amelyet igyekszünk a piaci igényeknek megfelelően naprakészen tartani.">
-    <meta name="keywords" content="Conti-Trans, Konténer, Üdvözöljük a Conti-Trans weboldalán">
+    <meta name="description" content="Túlsúlyos, speciális vagy sérülékeny konténerek belföldi szállítása. Éves túlsúlyengedélyek, kihúzható és légrugós pótkocsik. Kérjen ingyenes ajánlatot!">
+    <meta name="keywords" content="Conti-Trans, konténer szállítás, túlsúlyos konténer, belföldi szállítmányozás, légrugós pótkocsi">
     <meta name="author" content="Kelecsényi Balázs">
-    <!-- Open Graph data -->
-    <meta property="og:title" content="Conti-Trans kft">
+    <meta property="og:title" content="CONTI TRANS – Belföldi Konténer-szállítmányozás">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://kelecsenyi.github.io/Project-one/">
-    <meta name="og:site_name" value="Conti-Trans kft">
-    <!-- viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!--Favicon-->
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <!-- CSS -->
+    <link rel="apple-touch-icon" sizes="180x180" href="versionone/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="versionone/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="versionone/favicon/favicon-16x16.png">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <nav>
-      <div class="menu" id="menu">
-          <span class="logo">Conti-Trans Szállítmányozási kft</span>
-          <ul class="links">
-              <li><a href="#us">Rólunk</a></li>
-              <li><a href="#services">Szolgáltatások</a></li>
-              <li><a href="#contact">Kapcsolat</a></li>
-          </ul>
-          <div class="toggle" id="toggle">
-            <ion-icon name="menu-outline"></ion-icon>
-        </div>
+
+    <!-- NAV -->
+    <nav id="navbar">
+      <div class="nav-inner" id="menu">
+        <a href="index.html" class="logo">CONTI - TRANS</a>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#problems">Miért mi?</a></li>
+          <li><a href="#solutions">Megoldások</a></li>
+          <li><a href="#contact">Kapcsolat</a></li>
+        </ul>
+        <a href="#contact" class="btn-cta">Kapcsolatba lépek!</a>
+        <button class="hamburger" id="hamburger" aria-label="Menü">
+          <ion-icon name="menu-outline"></ion-icon>
+        </button>
       </div>
     </nav>
 
-    <main>
-      <div class="main-flexbox">
-        <section class="landing">
-              <div class="text">
-                <h1>Üdvözöljük a Conti-Trans weboldalán!</h1>
-                <h1>Tengeri konténereket szeretne szállíttatni belföldön, de nincs kivel?</h1>
-                <p>Akkor válasszon minket!</p>
-                <a href="#us">Ismerjen meg minket!<ion-icon name="arrow-down-circle-outline"></ion-icon></a>
-              </div>
-        </section>
-  
-        <section id="us">
-          <div class="text">
-            <h2>Mi vagyunk az a cég aki segít eljuttatni egy konténert egyik helyről a másikra.</h2>
-            <p>Cégünk, több mint 28 éve nyújt megbízható és minőségi szállítmányozási szolgáltatást, amelyet igyekszünk a piaci igényeknek megfelelően naprakészen tartani. Cégünk 1993-ban lett bejegyezve és innentől kezdve lett azon kevés cégek egyike, amely tengeri kontérek szállításával foglalkozik Magyarországon.</p>
+    <!-- HERO -->
+    <section id="hero">
+      <div class="hero-inner">
+        <span class="hero-badge">
+          <ion-icon name="shield-checkmark-outline"></ion-icon>
+          30+ éve a piacon
+        </span>
+        <h1>A legnehezebb konténerek is célba érnek -<br><span style="color:var(--orange)">Belföldi tengeri konténer szállítás.</h1>
+        <p class="hero-sub">Túlsúlyos, speciális vagy sérülékeny a rakomány? Szakértelmünkkel gyorsan és zökkenőmentesen szállítjuk le Önnek, rejtett költségek nélkül.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn-primary">
+            Kapcsolatba lépek!
+          </a>
+          <a href="#solutions" class="btn-ghost">
+            Megoldásaink
+            <ion-icon name="arrow-down-circle-outline"></ion-icon>
+          </a>
+        </div>
+      </div>
+      <div class="hero-scroll-hint">
+        <ion-icon name="chevron-down-outline"></ion-icon>
+      </div>
+    </section>
+    
+
+    <!-- STATS -->
+    <section id="stats">
+      <div class="stats-grid">
+        <div class="stat-item fade-in" data-founded="1993" data-suffix=" év">
+          <div><span class="stat-number">0</span><span class="stat-suffix"> év</span></div>
+          <p>Tapasztalat</p>
+        </div>
+        <div class="stat-item fade-in" data-target="1000" data-suffix="+">
+          <div><span class="stat-number">0</span><span class="stat-suffix">+</span></div>
+          <p>Sikeres szállítás</p>
+        </div>
+        <div class="stat-item fade-in" data-target="1993" data-suffix="">
+          <div><span class="stat-number">0</span><span class="stat-suffix"></span></div>
+          <p>Alapítás éve</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROBLEMS -->
+    <section id="problems">
+      <div class="section-inner">
+        <div class="section-header fade-in">
+          <span class="section-label">Felismeri?</span>
+          <h2>Önnek is fejtörést okoz a kikötői logisztika?</h2>
+          <p class="section-desc">A legtöbb fuvarozó nem tud megbirkózni a valódi ipari kihívásokkal. Mi igen.</p>
+        </div>
+        <div class="problems-grid">
+          <div class="problem-card fade-in">
+            <div class="problem-icon">
+              <ion-icon name="barbell-outline"></ion-icon>
+            </div>
+            <h3>Túlsúlyos a konténer?</h3>
+            <p>A szokványos fuvarozók gyakran visszautasítják a 26–28 tonna feletti rakományokat az engedélyek hiánya vagy a gyenge technika miatt.</p>
           </div>
-        </section>
-  
-        <section id="services">
-          <div class="text">
-            <h2>Szolgáltatások</h2>
-            <p>Cégünk csak hazai területen, tengeri áruszállító konténerek szállítmányozásával foglalkozik. Alvállalkozóink segítségével jelenleg képesek vagyunk 20, 40 és 45 lábas, illetve a 40 HC és 45 HC konténerek szállítására. Ezek mellett képesek vagyunk könnyű és nehéz konténerek szállítmányozására is.</p>
+          <div class="problem-card fade-in">
+            <div class="problem-icon">
+              <ion-icon name="resize-outline"></ion-icon>
+            </div>
+            <h3>Nem szabványos méret?</h3>
+            <p>A 45 lábas vagy high-cube konténerek szállítása rugalmatlan alvázakkal nehézkes és kockázatos – sokan egyszerűen visszautasítják.</p>
           </div>
-          <div class="icon">
-            <div class="container">
-              <div class="col">
-                <img src="pics/truck.svg" alt="Kamion">
-                <p>Megbízható és strapabíró járműpark</p>
-              </div>
-              <div class="col">
-                <img src="pics/heavy.svg" alt="Nehéz konténer">
-                <p>Nehéz konténerek szállítása problémák nélkül</p>
-              </div>
-              <div class="col">
-                <img src="pics/light.svg" alt="Könnyű konténer">
-                <p>Könnyű konténerek szállítása bárhova bármikor</p>
-              </div>
-              <div class="col">
-                <img src="pics/speed.svg" alt="Gyors szállítás">
-                <p>Gyors szállítás</span>
-              </div>
-              <div class="col">
-                <img src="pics/safty.svg" alt="Biztonság">
-                <p>Biztonságos és megbízható szállítás</p>
-              </div>
-              <div class="col">
-                <img src="pics/energi.svg" alt="Energia">
-                <p>Energikus csapat</p>
+          <div class="problem-card fade-in">
+            <div class="problem-icon">
+              <ion-icon name="warning-outline"></ion-icon>
+            </div>
+            <h3>Félti a rakományt?</h3>
+            <p>Precíziós gépek vagy elektronika esetén a hagyományos pótkocsik rázkódása komoly, nehezen megtérülő károkat okozhat.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOLUTIONS -->
+    <section id="solutions">
+      <div class="section-inner">
+        <div class="section-header fade-in">
+          <span class="section-label">Megoldásaink</span>
+          <h2>Erő és rugalmasság: Mi megoldjuk azt,<br>amit mások nem tudnak.</h2>
+        </div>
+        <div class="solutions-list">
+
+          <div class="solution-item fade-in">
+            <div class="solution-icon-wrap">
+              <ion-icon name="barbell-outline"></ion-icon>
+            </div>
+            <div class="solution-content">
+              <span class="solution-tag">Nehéz tehergépjármű túlsúlytáblával</span>
+              <h3>Túlsúlyos konténerek szállítása</h3>
+              <p>Nem ismerünk lehetetlent. Rendelkezünk a szükséges éves túlsúlyengedélyekkel és a megfelelő, megerősített gépjárműparkkal, hogy a legnehezebb, 30 tonna feletti konténereket is legálisan és biztonságosan célba juttassuk.</p>
+              <div class="solution-benefit">
+                <ion-icon name="checkmark-circle-outline"></ion-icon>
+                Önnek nem kell engedélyekkel bajlódnia, nincs bírságkockázat.
               </div>
             </div>
           </div>
-        </section>
-  
-        <section id="contact">
-          <div class="text">
-            <h2>Kapcsolat</h2>
-          </div>
-          <div class="wrapper">
-              <div>
-                <a href="https://www.google.hu/maps/dir//47.3905794,19.121004/@47.3901898,19.1211838,19z/data=!4m2!4m1!3e0?hl=hu&authuser=0" target="_blank"></a>
+
+          <div class="solution-item fade-in">
+            <div class="solution-icon-wrap">
+              <ion-icon name="expand-outline"></ion-icon>
+            </div>
+            <div class="solution-content">
+              <span class="solution-tag">Rugalmas méretkezelés</span>
+              <h3>Kihúzható alvázas pótkocsik</h3>
+              <p>Rugalmasság minden mérethez. Kihúzható alvázaink segítségével könnyedén kezeljük a 20', 30', 40' és a speciális 45 lábas konténereket is. A rakomány elosztása mindig optimális marad a tengelyeken.</p>
+              <div class="solution-benefit">
+                <ion-icon name="checkmark-circle-outline"></ion-icon>
+                Egyetlen partnerrel megoldhatja az összes konténertípust.
               </div>
-              <div>
-                <ul>
-                  <li>
-                      <h4>Telephely</h4>
-                      <ion-icon name="location-sharp"></ion-icon>
-                      <span>1239 Budapest, Grassalkovich út 255.</span>
-                  </li>
-                  <li>
-                      <h4>Telefonszám</h4>
-                      <ion-icon name="call-sharp"></ion-icon>
-                      <span>+36 30 949 7818</span>
-                  </li>
-                  <li>
-                      <h4>E-mail</h4>
-                      <ion-icon name="mail-sharp"></ion-icon>
-                      <span>info@contitrans.hu</span>
-                  </li>
-                  <li>
-                    <h4>Facebook</h4>
-                    <ion-icon name="logo-facebook"></ion-icon>
-                    <span> fb/contitrans</span>
-                </li>
-                </ul>
-              </div>
+            </div>
           </div>
-        </section>
+
+          <div class="solution-item fade-in">
+            <div class="solution-icon-wrap">
+              <ion-icon name="pulse-outline"></ion-icon>
+            </div>
+            <div class="solution-content">
+              <span class="solution-tag">Kíméletes technológia</span>
+              <h3>Légrugós pótkocsik</h3>
+              <p>Kíméletes szállítás sérülékeny áruknak. Légrugós technológiánk minimálisra csökkenti az útburkolat egyenetlenségeiből adódó rázkódást, így biztosítva a finommechanikai eszközök vagy elektronika épségét.</p>
+              <div class="solution-benefit">
+                <ion-icon name="checkmark-circle-outline"></ion-icon>
+                Nyugalom és garantált áruépség.
+              </div>
+            </div>
+          </div>
 
         </div>
       </div>
-    </main>
-    
+    </section>
+
+    <!-- CONTACT / CTA -->
+    <section id="contact">
+      <div class="section-inner">
+        <div class="contact-cta fade-in">
+          <span class="section-label">Lépjen velünk kapcsolatba</span>
+          <h2>Érjen célba a rakománya még ma!</h2>
+        </div>
+        <div class="contact-grid fade-in">
+
+          <!-- BAL OSZLOP: térkép -->
+          <div class="contact-map">
+            <a href="https://www.google.com/maps/dir//Budapest,+Grassalkovich+%C3%BAt+255,+1239/@47.389569,19.1202482,19z/data=!4m18!1m8!3m7!1s0x4741e8549276e831:0x907ec9b671a1c885!2sBudapest,+Grassalkovich+%C3%BAt+255,+1239!3b1!8m2!3d47.3895173!4d19.120723!16s%2Fg%2F11jn4fd7vd!4m8!1m0!1m5!1m1!1s0x4741e8549276e831:0x907ec9b671a1c885!2m2!1d19.120723!2d47.3895173!3e0?authuser=0&entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D"
+              target="_blank" rel="noopener" class="map-link" aria-label="Útvonaltervezés">
+              <img src="versionone/pics/location.JPG" alt="Telephely térkép" loading="lazy">
+              <div class="map-overlay">
+                <ion-icon name="navigate-outline"></ion-icon>
+                <span>Útvonaltervezés</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- JOBB OSZLOP: Elérhetőségek -->
+          <div class="contact-info">
+            <ul class="contact-list">
+              <li>
+                <div class="contact-icon"><ion-icon name="location-sharp"></ion-icon></div>
+                <div><h4>Telephely</h4><span>1239 Budapest, Grassalkovich út 255.</span></div>
+              </li>
+              <li>
+                <div class="contact-icon"><ion-icon name="call-sharp"></ion-icon></div>
+                <div><h4>Telefonszám</h4><a href="tel:+36309497818">+36 30 949 7818</a></div>
+              </li>
+              <li>
+                <div class="contact-icon"><ion-icon name="mail-sharp"></ion-icon></div>
+                <div><h4>E-mail</h4><a href="mailto:info@contitrans.hu">info@contitrans.hu</a></div>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
     <footer>
-      <div class="footer-container">
-        <a>
-          <span class="icon"><ion-icon name="time-sharp"></ion-icon></span>
-          <span class="text">
-            Hétfő - Péntek
-            <br>
-            08:00 - 17:00
-          </span>
-        </a>
-        <a href="https://www.google.hu/maps/dir//47.3905794,19.121004/@47.3901898,19.1211838,19z/data=!4m2!4m1!3e0?hl=hu&authuser=0" target="_blank">
-          <span class="icon"><ion-icon name="location-sharp"></ion-icon></span>
-          <span class="text">
-            Budapest
-          </span>
-        </a>
-        <a href="mailto:info@contitrans.hu">
-          <span class="icon"><ion-icon name="mail-sharp"></ion-icon></span>
-          <span class="text">
-            info@contitrans.hu
-          </span>
-        </a>
-        <a href="tel:+36309497818">
-          <span class="icon"><ion-icon name="phone-portrait-sharp"></ion-icon></span>
-          <span class="text">
-            +36 30 949 7818
-          </span>
-        </a>
-        <a href="https://www.facebook.com/contitrans" target="_blank">
-          <span class="icon"><ion-icon name="logo-facebook"></ion-icon></span>
-          <span class="text">
-            fb/contitrans
-          </span>
-        </a>
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="logo"><span class="logo-accent">CONTI</span> TRANS Szállítmányozási Kft.</span>
+          <p>Megbízható belföldi konténerszállítás 1993 óta.</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Conti-Trans Szállítmányozási Kft. Minden jog fenntartva.</p>
       </div>
     </footer>
 
-      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-      <script src="main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
